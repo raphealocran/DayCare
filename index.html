@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> Mama's Day Care — Where little ones learn to bloom</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ==================== NAVIGATION ==================== -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="#" class="nav__brand">
+        <span class="nav__logo-mark" aria-hidden="true">🌻</span>
+        <span>Mama's Day Care</span>
+      </a>
+
+      <ul class="nav__links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#programs">Programs</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <a href="#contact" class="nav__cta">Enroll Now</a>
+
+      <button class="nav__hamburger" aria-label="Toggle menu" aria-expanded="false" id="hamburgerBtn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile drawer -->
+  <div class="nav__drawer" id="navDrawer" role="dialog" aria-label="Mobile menu">
+    <a href="#about">About</a>
+    <a href="#programs">Programs</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#contact">Contact</a>
+    <a href="#contact" class="nav__cta">Enroll Now</a>
+  </div>
+
+  <!-- ==================== HERO ==================== -->
+  <header class="hero" id="about">
+    <div class="hero__content">
+      <span class="hero__badge">✦ Now Enrolling for Fall 2026</span>
+
+      <h1 class="hero__title">
+        Where little ones<br />
+        <em>learn to bloom.</em>
+      </h1>
+
+      <p class="hero__subtext">
+        A warm, nurturing day care for children aged 6 weeks to 5 years
+        in the heart of Millbrook. Certified teachers, play-based learning,
+        and a community that feels like family.
+      </p>
+
+      <div class="hero__ctas">
+        <a href="#pricing" class="btn btn--primary">View Plans Pricing</a>
+        <a href="#programs" class="btn btn--outline">Our Programs ↓</a>
+      </div>
+
+      <div class="hero__trust">
+        <div>
+          <div class="hero__stat-number">6+</div>
+          <div class="hero__stat-label">Years trusted</div>
+        </div>
+        <div>
+          <div class="hero__stat-number">150</div>
+          <div class="hero__stat-label">Families enrolled</div>
+        </div>
+        <div>
+          <div class="hero__stat-number">4.9★</div>
+          <div class="hero__stat-label">Parent rating</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero__image">
+      <img
+        src="images/img1.jpg"
+        alt="A teacher joyfully lifting a young child in a bright classroom"
+        loading="eager"
+      />
+      <div class="hero__image-overlay"></div>
+
+      <div class="hero__floating-badge">
+        <div class="hero__floating-badge-title">
+          <span aria-hidden="true">⭐</span>
+          <span>State-licensed NAEYC Accredited</span>
+        </div>
+        <p class="hero__floating-badge-desc">
+          Meeting the highest national standards for early childhood education.
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== FEATURES ==================== -->
+  <section class="section section--secondary" id="programs">
+    <div class="container">
+      <span class="section__label">What sets us apart</span>
+      <h2 class="section__title">
+        Everything a growing child needs, under one roof.
+      </h2>
+
+      <div class="features__grid">
+        <!-- Card 1 -->
+        <div class="feature-card">
+          <div class="feature-card__icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+              <circle cx="9" cy="7" r="4" />
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+              <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+            </svg>
+          </div>
+          <h3 class="feature-card__title">Certified Teachers</h3>
+          <p class="feature-card__desc">
+            Every educator holds an ECE credential and completes annual
+            background checks. Low turnover means familiar faces your child trusts.
+          </p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="feature-card">
+          <div class="feature-card__icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
+              <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+            </svg>
+          </div>
+          <h3 class="feature-card__title">Safe Licensed</h3>
+          <p class="feature-card__desc">
+            State-licensed with monthly inspections and a 4:1 child-to-teacher
+            ratio for infants, 8:1 for preschoolers. Safety is never an afterthought.
+          </p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="feature-card">
+          <div class="feature-card__icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="5" />
+              <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" />
+            </svg>
+          </div>
+          <h3 class="feature-card__title">Structured Curriculum</h3>
+          <p class="feature-card__desc">
+            A Reggio Emilia-inspired, play-based approach that follows each
+            child's curiosity while building kindergarten readiness.
+          </p>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="feature-card">
+          <div class="feature-card__icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M18 8h1a4 4 0 0 1 0 8h-1" />
+              <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z" />
+              <line x1="6" y1="1" x2="6" y2="4" />
+              <line x1="10" y1="1" x2="10" y2="4" />
+              <line x1="14" y1="1" x2="14" y2="4" />
+            </svg>
+          </div>
+          <h3 class="feature-card__title">Nutritious Meals</h3>
+          <p class="feature-card__desc">
+            Chef-prepared breakfast, lunch, and snacks made with locally
+            sourced ingredients. Allergy-friendly options always available.
+          </p>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="feature-card">
+          <div class="feature-card__icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="10" />
+              <path d="M8 14s1.5 2 4 2 4-2 4-2" />
+              <line x1="9" y1="9" x2="9.01" y2="9" />
+              <line x1="15" y1="9" x2="15.01" y2="9" />
+            </svg>
+          </div>
+          <h3 class="feature-card__title">Creative Arts</h3>
+          <p class="feature-card__desc">
+            Daily painting, music, and dramatic play. We celebrate the mess
+            because it's where imagination takes root.
+          </p>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="feature-card">
+          <div class="feature-card__icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+            </svg>
+          </div>
+          <h3 class="feature-card__title">Outdoor Play</h3>
+          <p class="feature-card__desc">
+            Two secure play yards, a vegetable garden, and a splash pad.
+            Fresh air and gross-motor play are part of every day.
+          </p>
+        </div>
+      </div>
+
+      <!-- Image strip -->
+      <div class="features__strip">
+        <div class="features__strip-item">
+          <img
+            src="images/img2.jpg"
+            alt="Children playing with colorful toys on the floor"
+            loading="lazy"
+          />
+        </div>
+        <div class="features__strip-item">
+          <img
+            src="images/img3.jpg"
+            alt="An adult and child drawing together at a table"
+            loading="lazy"
+          />
+        </div>
+        <div class="features__strip-item">
+          <img
+            src="images/img4.jpg"
+            alt="Children seated at a classroom table"
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== TESTIMONIALS ==================== -->
+  <section class="section" id="testimonials">
+    <div class="container">
+      <span class="section__label section__label--center">Parent voices</span>
+      <h2 class="section__title section__title--center">
+        Happy families say it best.
+      </h2>
+
+      <div class="testimonials__grid">
+        <!-- Testimonial 1 -->
+        <div class="testimonial-card">
+          <div class="testimonial-card__mark" aria-hidden="true">“</div>
+          <p class="testimonial-card__quote">
+            The teachers at Sunflower treat my daughter like their own.
+            She comes home singing new songs every week and asking to
+            go back on the weekends.
+          </p>
+          <div class="testimonial-card__divider"></div>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar" aria-hidden="true">PN</div>
+            <div>
+              <div class="testimonial-card__name">Priya Nair</div>
+              <div class="testimonial-card__role">Parent of a 3-year-old</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="testimonial-card">
+          <div class="testimonial-card__mark" aria-hidden="true">“</div>
+          <p class="testimonial-card__quote">
+            We toured five day cares before choosing Sunflower. The
+            warmth was immediate — you can tell the staff genuinely
+            love what they do.
+          </p>
+          <div class="testimonial-card__divider"></div>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar" aria-hidden="true">MT</div>
+            <div>
+              <div class="testimonial-card__name">Marcus Jill Thornton</div>
+              <div class="testimonial-card__role">Parents of a 4-year-old</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="testimonial-card">
+          <div class="testimonial-card__mark" aria-hidden="true">“</div>
+          <p class="testimonial-card__quote">
+            With twins, drop-off used to be chaos. The team at Sunflower
+            made the transition seamless. The daily photo updates are
+            a gift I didn't know I needed.
+          </p>
+          <div class="testimonial-card__divider"></div>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar" aria-hidden="true">DC</div>
+            <div>
+              <div class="testimonial-card__name">Danielle Cruz</div>
+              <div class="testimonial-card__role">Parent of twins, age 2</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PRICING ==================== -->
+  <section class="section section--secondary" id="pricing">
+    <div class="container">
+      <span class="section__label section__label--center">Pricing</span>
+      <h2 class="section__title section__title--center">
+        Plans for every family.
+      </h2>
+      <p class="section__subtext section__subtext--center">
+        All plans include nutritious meals, outdoor play, creative arts,
+        and daily progress updates. No hidden fees.
+      </p>
+
+      <!-- Toggle -->
+      <div class="pricing__toggle">
+        <span class="pricing__toggle-label is-active" id="labelMonthly">Monthly</span>
+        <button
+          class="pricing__switch"
+          id="pricingSwitch"
+          role="switch"
+          aria-checked="false"
+          aria-label="Toggle annual pricing"
+        >
+          <span class="pricing__switch-knob"></span>
+        </button>
+        <span class="pricing__toggle-label" id="labelAnnual">Annual</span>
+        <span class="pricing__save-badge">Save 8%</span>
+      </div>
+
+      <div class="pricing__grid">
+        <!-- Sprout -->
+        <div class="pricing-card pricing-card--sprout">
+          <span class="pricing-card__tagline">Half day</span>
+          <h3 class="pricing-card__name">Sprout</h3>
+          <p class="pricing-card__hours">7 am – 12 pm</p>
+          <div class="pricing-card__price" data-monthly="385">$385</div>
+          <p class="pricing-card__price-period" data-period>per month</p>
+          <ul class="pricing-card__features">
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M8 12l3 3 5-6" />
+              </svg>
+              Morning snack & lunch
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M8 12l3 3 5-6" />
+              </svg>
+              Play-based curriculum
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M8 12l3 3 5-6" />
+              </svg>
+              Daily photo updates
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M8 12l3 3 5-6" />
+              </svg>
+              Outdoor play time
+            </li>
+          </ul>
+          <a href="#contact" class="pricing-card__cta">Choose Sprout</a>
+        </div>
+
+        <!-- Bloom (popular) -->
+        <div class="pricing-card pricing-card--bloom">
+          <span class="pricing-card__popular-badge">★ Most popular</span>
+          <span class="pricing-card__tagline">Full day</span>
+          <h3 class="pricing-card__name">Bloom</h3>
+          <p class="pricing-card__hours">7 am – 6 pm</p>
+          <div class="pricing-card__price" data-monthly="675">$675</div>
+          <p class="pricing-card__price-period" data-period>per month</p>
+          <ul class="pricing-card__features">
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M8 12l3 3 5-6" />
+              </svg>
+              All meals & snacks
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M8 12l3 3 5-6" />
+              </svg>
+              Full Reggio curriculum
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M8 12l3 3 5-6" />
+              </svg>
+              Creative arts daily
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M8 12l3 3 5-6" />
+              </svg>
+              Splash pad & garden
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M8 12l3 3 5-6" />
+              </svg>
+              Kindergarten readiness
+            </li>
+          </ul>
+          <a href="#contact" class="pricing-card__cta">Choose Bloom</a>
+        </div>
+
+        <!-- Flourish -->
+        <div class="pricing-card pricing-card--flourish">
+          <span class="pricing-card__tagline">Extended day</span>
+          <h3 class="pricing-card__name">Flourish</h3>
+          <p class="pricing-card__hours">7 am – 6 pm + enrichment</p>
+          <div class="pricing-card__price" data-monthly="960">$960</div>
+          <p class="pricing-card__price-period" data-period>per month</p>
+          <ul class="pricing-card__features">
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M8 12l3 3 5-6" />
+              </svg>
+              Everything in Bloom
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M8 12l3 3 5-6" />
+              </svg>
+              Music & movement class
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M8 12l3 3 5-6" />
+              </svg>
+              Spanish immersion
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M8 12l3 3 5-6" />
+              </svg>
+              Yoga & mindfulness
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M8 12l3 3 5-6" />
+              </svg>
+              Priority sibling enrollment
+            </li>
+          </ul>
+          <a href="#contact" class="pricing-card__cta">Choose Flourish</a>
+        </div>
+      </div>
+
+      <p class="pricing__footnote">
+        Need a custom schedule or have siblings?
+        <a href="#contact">Ask about sibling discounts →</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- ==================== CTA / CONTACT ==================== -->
+  <section class="cta-section" id="contact">
+    <div class="cta-block">
+      <div class="cta-block__blob cta-block__blob--1"></div>
+      <div class="cta-block__blob cta-block__blob--2"></div>
+
+      <span class="cta-block__emoji" aria-hidden="true">🌻</span>
+      <h2 class="cta-block__title">Ready to schedule a tour?</h2>
+      <p class="cta-block__subtext">
+        No appointment needed — drop by Monday through Friday at 9 am or 2 pm.
+        Or leave your email and we'll reach out within one business day.
+      </p>
+
+      <form class="cta-block__form" id="tourForm" novalidate>
+        <label for="emailInput" class="sr-only">Email address</label>
+        <input
+          type="email"
+          id="emailInput"
+          placeholder="username@example.com"
+          required
+          autocomplete="email"
+        />
+        <button type="submit">Book a tour →</button>
+      </form>
+
+      <p class="cta-block__contact-info">
+        1181 Sheridan Ave, Bronx 1045<br />
+        (347) 259-5162 . hello@mamasdaycare.com
+      </p>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <!-- Brand -->
+        <div class="footer__brand">
+          <div class="footer__brand-logo">
+            <span class="nav__logo-mark" aria-hidden="true">🌻</span>
+            <span>Mama's Day Care</span>
+          </div>
+          <p class="footer__mission">
+            Nurturing curious minds and kind hearts since 2020. A day care
+            where every child is seen, celebrated, and given room to bloom.
+          </p>
+        </div>
+
+        <!-- Navigate -->
+        <div>
+          <h4 class="footer__heading">Navigate</h4>
+          <ul class="footer__links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#programs">Programs</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Hours -->
+        <div>
+          <h4 class="footer__heading">Hours</h4>
+          <ul class="footer__hours">
+            <li>
+              <span>Mon – Fri</span>
+              <span>7 am – 6 pm</span>
+            </li>
+            <li>
+              <span>Saturday</span>
+              <span>8 am – 1 pm</span>
+            </li>
+            <li>
+              <span>Sunday</span>
+              <span>Closed</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <span>© 2026 Mama's Day Care. All rights reserved.</span>
+        <div class="footer__bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
